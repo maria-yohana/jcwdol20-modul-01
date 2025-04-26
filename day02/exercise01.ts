@@ -73,16 +73,3 @@ days).
 ○ Example : date1 = 2022-01-20, date2 = 2022-01-22
 ○ Output : 2
  */
-
-
-  // hints: 
-//Pembulatan
-//pembulatan ke yang lebih dekat
-//let limaRatushari: number = 500;
-
-console.log(Math.round(25.4));
-console.log(Math.round(26.5));
-//pembulatan ke atas
-console.log(Math.ceil(25.1));
-//pembulatan ke bawah
-console.log(Math.floor(25.9));
