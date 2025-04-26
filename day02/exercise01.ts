@@ -1,64 +1,88 @@
-//1 Write a code to find area of rectangle
-// example: length = 5, width = 3 - output: 15
-//INPUT 
-let panjang: number = 5;
-let lebar: number = 3;
-// PROCESS
-const area: number = panjang * lebar;
-//OUTPUT
-console.log(area); 
-
-//2 Wrie a code to find perimeter of rectangle
-//example: length = 5, width = 3 
-// PROCESS
-const perimeter: number = panjang*2 + lebar*2;
-console.log(perimeter);
-
-//3 write a code to find diameter, circumference and area of a circle
-//radius = 5
-//output: diameter 10, circumference 31.34159, and area= 78.539
-let radius: number = 5;
-
-//PROCESS
-let pi: number = 3.14;
-
-const diameter: number = radius * 2;
-console.log(diameter); 
-
-const circumference: number = 2 * pi * radius;
-console.log(circumference); 
-
-const circleArea: number = pi * radius * radius; 
-console.log(circleArea);  
-
-//write a code to find angles of triangle if two angels are given
-//example: a=80, b =65 -- output= 65
-let angleA: number = 80;
-let angleB: number = 65;
-
-const angleC: number = 180 - angleA - angleB;
-console.log(angleC);
-
-//Write a code to convert days to years, months and days (Notes: 1 year : 365 days, 1 month : 30 days).
 /**
- * Example : 400 days → 1 year, 1 month, 5 days
- * Example: 366 days → 1 year, 0 month, 1 day
+ * //contoh: total belanja
+    INPUT: datanya apa?
+    PROCESS: hargaBarang * jumlahBarang - process Arithmetic
+    OUTPUT:  totalBelanja
+ **/
+
+//Redoing the exercise: https://drive.google.com/drive/u/0/folders/10Jwj6hMeRO36f6tGP5EY94ca_eAYvWf0
+
+/**
+Soal no 1:
+    Write a code to find area of rectangle.
+    Example : length = 5, width = 3
+    Output : 15
+**/
+    //INPUT = data! lebarRectangle, panjangRectangle
+    //PROCESS = Kita tahu bahwa areaRectangle = l x p maka arithmetic
+    //OUTPUT = luasRectangle
+let lebarRectangle: number = 5;
+let panjangRectangle: number = 3;
+const areaRectangle: numeber = lebarRectangle * panjangRectangle
+console.log(areaRectangle); 
+
+/**
+Soal no 2:
+    //INPUT = data! lebarRectangle, panjangRectangle
+    //PROCESS = perimeter lx2 + px2
+    //OUTPUT = kelilingRectangle
  */
-//INPUT
+//menggunakan let di atas
+const kelilingRectangle: number = (lebarRectangle * 2) + (panjangRectangle *2);
+console.log(kelilingRectangle); 
+
+/**
+Soal no 3:
+    //INPUT = data! r lingkaran
+    //PROCESS = d=r*2 , circumference = 2*pi*r, area = pi.r.r 
+    //Output = d, circumference, area
+ */ 
+let rujiLingkaran: number = 5;
+const diameterLingkaran: number = rujiLingkaran * 2;
+const kelilingLingkaran: number = 2 * rujiLingkaran * Math.PI;
+const luasLingkaran: number = Math.PI * rujiLingkaran * rujiLingkaran
+console.log(diameterLingkaran);
+console.log(kelilingLingkaran);
+console.log(luasLingkaran);
+
+/**
+Soal no 4:
+    INPUT: triangle's angle(s)
+    PROCESS: total triangle angles = 180
+    OUTPUT: oneoftheAngles
+**/
+let angleAsegitiga: number = 80;
+let angleBsegitiga: number = 65;
+const angleCsegitia: number = 180 - (angleAsegitiga +angleBsegitiga);
+console.log(angleCsegitia);
+console.log(`${angleCsegitia}°`);
+//qOftheday = INI DATA TERAKHIR OUTPUTNYA JADI STRING YA?
+
+/**
+Soal no 5: 
+    //INPUT: days
+    //PROCESS: conversion to years, months days
+    //OUTPUT: year, months, days
+ */
+/** 
+● Write a code to convert days to years, months and days (Notes: 1 year : 365 days, 1 month : 30
+days).
+○ Example : 400 days → 1 year, 1 month, 5 days
+○ Example: 366 days → 1 year, 0 month, 1 day
+● Write a code to get difference between dates in days.
+○ Example : date1 = 2022-01-20, date2 = 2022-01-22
+○ Output : 2
+ */
+
+
+  // hints: 
+//Pembulatan
+//pembulatan ke yang lebih dekat
 //let limaRatushari: number = 500;
 
-//const conv: number = limaRatushari : 365;
-//console.log(conv);  
-//PROCESS
-
-//OUTPUT
- 
-// Write a code to get difference between dates in days.
-/**
- * ○ Example : date1 = 2022-01-20, date2 = 2022-01-22
- *  Output : 2
- * Exercise
- */
-
-
-
+console.log(Math.round(25.4));
+console.log(Math.round(26.5));
+//pembulatan ke atas
+console.log(Math.ceil(25.1));
+//pembulatan ke bawah
+console.log(Math.floor(25.9));

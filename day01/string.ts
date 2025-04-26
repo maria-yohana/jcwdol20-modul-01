@@ -21,25 +21,27 @@ console.log(tokoAKu);
 
 //typeof: fungsi JS yang bertugas untk mengetahui TIPE DATA suatu variable atau data itu
 console.log(typeof tokoKu);
-console.log(typeof 10);
+console.log(typeof 10); 
 
 //FUNGSI BAWAAN TYPE DATA STRING
 let greeting: string = "Hello, Purwadhika Student" ;
 
-//length -- count character
+//length() -- count character pada data string
 console.log(greeting.length);
 
-//toLowerCase() 
+//toLowerCase() -- merubah semua huruf menjadi huruf kecil
 console.log(greeting.toLowerCase()); 
 
-//toUpperCase
+//toUpperCase() -- merubah semua huruf menjadi huruf besar
 console.log(greeting.toUpperCase());
 
-// includes() -> memastikan suatu kata di dalam string
+// includes() -- memastikan suatu kata di dalam string
 console.log(greeting.includes("Student"));  
 
-//split() -> merubah data menjadi string menjadi array - ada bedanya kalau di dalam quote diberikan spasi atau tidak
-console.log(greeting.split(" "))
+//split() -- merubah data menjadi string menjadi data array
+// ada bedanya kalau di dalam quote diberikan spasi atau tidak
+// jika tidak ada spasi dalam "" maka data dipisah per-karakter
+console.log(greeting.split(" "));
 
 //replace -> mengganti kata tertentu 
-console.log(greeting.replace("Student", "Murid"))
+console.log(greeting.replace("Student", "Murid"));

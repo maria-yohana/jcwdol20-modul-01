@@ -1,46 +1,64 @@
 //Boolean : tipe data yang hanya memiliki dua opsi nilai true or false
+//PENULISAN SECARA LANGSUNG
 let benar: boolean = true;
 let salah: boolean = false;
 
-//comparison operator: >, <, >=, <=, ==, ===, != -> comparison operator
+/**
+ * selain menuliskan secara langsung true/salah pada boolean,
+ kita juga bisa mendapatkannya dari comparison operator
+ */
+//comparison operator: >, <, >=, <=, ==, ===, !=  
 //comparison operator -> operasi perbandingan
+//caranya kita bisa mengisi data dengan number atau string 
 let valueA: string | number = 12;
 let valueB: string | number = 15;
+let valueC: string | number = "genap"
 
-console.log(valueA > valueB); 
+console.log(valueA > valueB);
 console.log(valueA < valueB);
 console.log(valueA >= 8);
-console.log(valueB <= 15)
+console.log(valueB <= 15);
 console.log(valueA != valueB);
-console.log(valueA == "12");
+console.log(valueA == 12);
+console.log(valueA == valueB);
 
-//comparison operator == 2 , fokus nilai - bukan tipe data -- angka tipe number /string
-//console.log(valueA === "12");
+//Comparison operator ==  fokus nilai bukan tipe data. Angka tipe number /string
+//This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
+//console.log(valueA == "12"); true
 
-//comparison operator === perbandingan value dan type datanya juga, makanya false
+//triple equal
+//comparison operator === perbandingan value dan type datanya juga, makanya false. 
+//console.log(valueA === "12"); false
+console.log(valueA === valueB);
 
-//Logical operator: AND &&, OR || NOT !
-//AND logikan yang menghasilkan nilai true jika semua nilai boolean yang di simpulkan nilainya true
+//***/
+console.log(valueA + " adalah angka " + valueC); 
+
+//Logical operator: && || ! (AND OR NOT)
+//AND: logika yang akan menghasilkan nilai true jika semua nilai boolean true
 console.log(true && true);
+//example of logika operator && below:
 console.log(valueA === 12 && valueB < 20); 
 console.log(true && false);
 console.log(false && true);
 console.log(false && false);
 
-//OR : logika yang akan menghasilkan nilai TRUE jika salah satu nilai boolean yang di simpulakn nilainya rue
-console.log( true || true);
+//OR: logika yang akan menghasilkan nilai TRUE jika salah satu nilai boolean true
+console.log(true || true);
 console.log(true || false);
 console.log(false  || true);
 console.log(false || false);
 
-//NOT: membalikkan nilai boolean
+//NOT: negasi, membalikkan nilai boolean
 console.log(!false);
-//console.log(!valueA === valueB);
-//tiap tipe data di JS ada boolean bawaan
+console.log(valueA === valueB);
+console.log(!(valueA === valueB));
 
-//Nilai boolean berdasarkan data
+///tiap-tiap data di JS ada boolean bawaan. Jadi nilai true and false boolean bisa didapat dari tipe data
+//Nilai boolean berdasarkan data dengan memanggil fungsi boolean
 //TRUTHLY
 console.log(Boolean("ABC"));
+//spasi juga nilai
 console.log(Boolean(" "));
 console.log(Boolean(1));
 console.log(Boolean(-1));
