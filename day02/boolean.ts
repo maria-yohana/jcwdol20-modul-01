@@ -1,5 +1,6 @@
 //Boolean : tipe data yang hanya memiliki dua opsi nilai true or false
-//PENULISAN SECARA LANGSUNG
+//Cara cara Penulisan:
+// 1. PENULISAN SECARA LANGSUNG
 let benar: boolean = true;
 let salah: boolean = false;
 
@@ -7,7 +8,7 @@ let salah: boolean = false;
  * selain menuliskan secara langsung true/salah pada boolean,
  kita juga bisa mendapatkannya dari comparison operator
  */
-//comparison operator: >, <, >=, <=, ==, ===, !=  
+//2. COMPARISON OPERATOR: >, <, >=, <=, ==, ===, !=  
 //comparison operator -> operasi perbandingan
 //caranya kita bisa mengisi data dengan number atau string 
 let valueA: string | number = 12;
@@ -34,7 +35,7 @@ console.log(valueA === valueB);
 //***/
 console.log(valueA + " adalah angka " + valueC); 
 
-//Logical operator: && || ! (AND OR NOT)
+//3. LOGICAL OPERATOR: && || ! (AND OR NOT)
 //AND: logika yang akan menghasilkan nilai true jika semua nilai boolean true
 console.log(true && true);
 //example of logika operator && below:
@@ -55,7 +56,7 @@ console.log(valueA === valueB);
 console.log(!(valueA === valueB));
 
 ///tiap-tiap data di JS ada boolean bawaan. Jadi nilai true and false boolean bisa didapat dari tipe data
-//Nilai boolean berdasarkan data dengan memanggil fungsi boolean
+//4. NILAI BOOLEAN berdasarkan data dengan memanggil fungsi boolean
 //TRUTHLY
 console.log(Boolean("ABC"));
 //spasi juga nilai
