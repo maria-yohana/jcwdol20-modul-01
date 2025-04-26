@@ -57,9 +57,12 @@ console.log(resultcc + pi); //** example */
 console.log(pi);
 
 //Pembulatan
+//pembulatan ke yang lebih dekat
 console.log(Math.round(25.4));
 console.log(Math.round(26.5));
+//pembulatan ke atas
 console.log(Math.ceil(25.1));
+//pembulatan ke bawah
 console.log(Math.floor(25.9));
 
 //MIN and MAX
@@ -67,6 +70,7 @@ console.log(Math.max(12, 5,9, 65));
 console.log(Math.min(0, -34, -13, -100, 54))
 
 //Random value
+console.log(Math.random());
 console.log(Math.random());
 
 // Parsing data
@@ -84,4 +88,11 @@ console.log(harga.toLocaleString('id-ID', {
     currency: "IDR", 
     minimumFractionDigits: 0,
 }));
-console.log(harga.toLocaleString('us-US', { style: 'currency', currency: 'USD' })); 
+console.log(harga.toLocaleString('us-US', { 
+    style: 'currency', 
+    currency: 'USD',
+}));
+console.log(harga.toLocaleString('ja-JP', { 
+    style: 'currency',
+    currency: 'JPY'
+}));

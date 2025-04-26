@@ -41,7 +41,9 @@ console.log(greeting.includes("Student"));
 //split() -- merubah data menjadi string menjadi data array
 // ada bedanya kalau di dalam quote diberikan spasi atau tidak
 // jika tidak ada spasi dalam "" maka data dipisah per-karakter
-console.log(greeting.split(" "));
+console.log(greeting.split(" ")); 
+console.log(greeting.split(""));
 
-//replace -> mengganti kata tertentu 
+//replace -> mengganti kata/karakter tertentu 
 console.log(greeting.replace("Student", "Murid"));
+console.log(greeting.replace(",", "!,"))
