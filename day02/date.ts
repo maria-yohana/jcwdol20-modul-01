@@ -10,5 +10,8 @@ console.log(now.getSeconds());
 console.log(now.getMilliseconds());
 console.log(now.getDate());
 console.log(now.getMonth());
+//januari bulan 0, minggu hari 0
 console.log(now.getDay());
+//perbandingan dari tahun 1970
 console.log(now.getTime());
+

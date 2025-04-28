@@ -18,7 +18,7 @@ Soal no 1:
     //OUTPUT = luasRectangle
 let lebarRectangle: number = 5;
 let panjangRectangle: number = 3;
-const areaRectangle: numeber = lebarRectangle * panjangRectangle
+const areaRectangle: number = lebarRectangle * panjangRectangle
 console.log(areaRectangle); 
 
 /**
@@ -63,12 +63,24 @@ Soal no 5:
     //INPUT: days
     //PROCESS: conversion to years, months days
     //OUTPUT: year, months, days
+**/ 
+let totalDays: number = 366;
+let yearTomonth: number = 12;
+let yeartoDays: number = 365;
+let monthToDays: number = 30;
+
+const convertYear: number = totalDays / yeartoDays;
+const convertMonth: number = totalDays % 365 / 30;
+const convertDays: number = totalDays % 365 % 30;
+console.log(Math.floor(convertYear) +  "tahun"); 
+console.log(Math.floor(convertMonth) + " bulan");
+console.log(Math.floor(convertDays) + " hari");
+
+/**
+Soal no 6: 
  */
-/** 
-● Write a code to convert days to years, months and days (Notes: 1 year : 365 days, 1 month : 30
-days).
-○ Example : 400 days → 1 year, 1 month, 5 days
-○ Example: 366 days → 1 year, 0 month, 1 day
+
+/**
 ● Write a code to get difference between dates in days.
 ○ Example : date1 = 2022-01-20, date2 = 2022-01-22
 ○ Output : 2

@@ -7,7 +7,7 @@ let kodeToko: string = `55281`;
 //Menggabungkan data string
 //cara 1: menggunakan operator penjumlahan
 let tokoKu: string = namaToko + " " + alamatToko;
-console.log(tokoKu);
+console.log(tokoKu); 
 
 let tokoAKu: string = namaToko + " " + alamatToko + " " + kodeToko;
 console.log(tokoAKu);
@@ -35,8 +35,10 @@ console.log(greeting.toLowerCase());
 //toUpperCase() -- merubah semua huruf menjadi huruf besar
 console.log(greeting.toUpperCase());
 
-// includes() -- memastikan suatu kata di dalam string
+// includes() -- memastikan suatu kata atau karakter di dalam string
 console.log(greeting.includes("Student"));  
+console.log(greeting.includes(","));
+console.log(greeting.includes("."));
 
 //split() -- merubah data menjadi string menjadi data array
 // ada bedanya kalau di dalam quote diberikan spasi atau tidak

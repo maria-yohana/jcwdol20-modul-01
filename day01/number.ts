@@ -3,7 +3,8 @@
 let jarak: number = 15000 // Nilai INT
 let berat: number = 90.25; // Nilai Float/decimal
 
-//Arithmetic : +, -, *, ?, % (operator)
+//Arithmetic : +, -, *, /, % (operator)
+// Key simple rule for %: If left side < right side, result is just the left number itself.
 let angkaA: number = 15;
 let angkaB: number = 13;
 

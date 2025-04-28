@@ -47,18 +47,8 @@ type.
 
 //input 1 string, 2 number, 3 other data type
 
-let dataType: any = 3 ;
+let price: number = 525000;
+console.log(price.toString()); 
+console.log(price.toLocaleString("id-ID", {
 
-switch (typeof food) {
-    case "string":
-        console.log("1");
-        break;
-    case "number":
-        console.log("2");
-        break;
-    default:
-        console.log("3");
-        break;
-}
-
-
+}));

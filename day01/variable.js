@@ -1,8 +1,8 @@
 // Variable : Penampung Data
-// Variable is a container to fruit
+// Variable is the fruit container
 
 /**
- * Susunan penulisan Variable --> define keywordVariable(kontainer) namaVariable(labelA) = data(jeruk);
+ * Susunan penulisan variable --> define keywordVariable(kontainer) namaVariable(labelA) = data(jeruk);
  * keywordVariable  :   var, let, const
  * namaVariable     :   - harus diawali dengan huruf atau diawali dengan symbol "_" / symbol "$"
  *                      - jika dua kata maka camelCase atau snake_case
@@ -66,4 +66,4 @@ const product = ["Apel", "Jeruk", "Mangga"]; //Array
 const job = {
     position: "Coder",
     salaryRate: 4000000,
-}; // Ob
+}; // Object
